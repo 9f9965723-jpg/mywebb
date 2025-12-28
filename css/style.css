@@ -1352,3 +1352,196 @@ footer p {
 section {
     display: none !important;
 }
+
+/* ============================================
+   SETTINGS WINDOW STYLES
+============================================ */
+
+/* Settings Button in Taskbar */
+.settings-btn {
+    margin-left: var(--spacing-sm);
+}
+
+/* Settings Content Layout */
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Settings Section Container */
+.settings-section {
+    padding: var(--spacing-lg);
+}
+
+/* Settings Title */
+.settings-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-glass);
+}
+
+.settings-title i {
+    color: var(--accent-neon);
+    font-size: 1.2rem;
+}
+
+/* Settings Options Container */
+.settings-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Individual Setting Item */
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-normal);
+}
+
+.setting-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-neon);
+}
+
+.setting-item label {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Select Dropdown Styling */
+.setting-select {
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-arabic);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    min-width: 180px;
+}
+
+.setting-select:hover {
+    border-color: var(--accent-neon);
+}
+
+.setting-select:focus {
+    outline: none;
+    border-color: var(--accent-neon);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.setting-select option {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 0.5rem;
+}
+
+/* Toggle Switch Styling */
+.switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.switch-label span:first-child {
+    flex: 1;
+}
+
+.setting-switch {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.setting-switch:checked {
+    background: var(--accent-neon);
+    border-color: var(--accent-neon);
+}
+
+.setting-switch::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: all var(--transition-normal);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.setting-switch:checked::before {
+    transform: translateX(-24px);
+}
+
+/* Reset Button Styling */
+.btn-reset {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(231, 76, 60, 0.1);
+    border: 2px solid #e74c3c;
+    border-radius: var(--radius-md);
+    color: #e74c3c;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-arabic);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    transition: all var(--transition-normal);
+}
+
+.btn-reset:hover {
+    background: #e74c3c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-reset i {
+    font-size: 1.1rem;
+}
+
+/* Settings Responsive */
+@media (max-width: 768px) {
+    .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .setting-select {
+        width: 100%;
+    }
+
+    .switch-label {
+        flex-direction: row;
+    }
+}

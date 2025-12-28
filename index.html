@@ -465,6 +465,121 @@
         </div>
     </div>
 
+    <!-- Settings Window -->
+    <div class="window" id="window-settings" data-window="settings">
+        <div class="window-header">
+            <div class="window-title">
+                <i class="fas fa-cog"></i>
+                <span>الإعدادات | Settings</span>
+            </div>
+            <div class="window-controls">
+                <button class="window-btn minimize" title="تصغير"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-btn maximize" title="تكبير"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-btn close" title="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="settings-content">
+                <!-- Theme Settings -->
+                <div class="settings-section glass-container reveal">
+                    <h3 class="settings-title">
+                        <i class="fas fa-palette"></i>
+                        المظهر | Theme
+                    </h3>
+                    <div class="settings-options">
+                        <div class="setting-item">
+                            <label for="theme-select">نمط العرض:</label>
+                            <select id="theme-select" class="setting-select">
+                                <option value="dark">داكن | Dark</option>
+                                <option value="light">فاتح | Light</option>
+                                <option value="auto">تلقائي | Auto</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label for="color-scheme">نظام الألوان:</label>
+                            <select id="color-scheme" class="setting-select">
+                                <option value="purple">بنفسجي | Purple</option>
+                                <option value="blue">أزرق | Blue</option>
+                                <option value="green">أخضر | Green</option>
+                                <option value="red">أحمر | Red</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Settings -->
+                <div class="settings-section glass-container reveal">
+                    <h3 class="settings-title">
+                        <i class="fas fa-tachometer-alt"></i>
+                        الأداء | Performance
+                    </h3>
+                    <div class="settings-options">
+                        <div class="setting-item">
+                            <label class="switch-label">
+                                <span>تأثيرات الرسومات:</span>
+                                <input type="checkbox" id="enable-effects" class="setting-switch" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="switch-label">
+                                <span>المؤشر المخصص:</span>
+                                <input type="checkbox" id="enable-cursor" class="setting-switch" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="switch-label">
+                                <span>الخلفية المتحركة:</span>
+                                <input type="checkbox" id="enable-orbs" class="setting-switch" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Settings -->
+                <div class="settings-section glass-container reveal">
+                    <h3 class="settings-title">
+                        <i class="fas fa-magic"></i>
+                        الحركات | Animations
+                    </h3>
+                    <div class="settings-options">
+                        <div class="setting-item">
+                            <label for="animation-speed">سرعة الحركات:</label>
+                            <select id="animation-speed" class="setting-select">
+                                <option value="slow">بطيء | Slow</option>
+                                <option value="normal" selected>عادي | Normal</option>
+                                <option value="fast">سريع | Fast</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label class="switch-label">
+                                <span>تأثيرات المغناطيسية:</span>
+                                <input type="checkbox" id="enable-magnetic" class="setting-switch" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reset Settings -->
+                <div class="settings-section glass-container reveal">
+                    <h3 class="settings-title">
+                        <i class="fas fa-undo"></i>
+                        إعادة التعيين | Reset
+                    </h3>
+                    <div class="settings-options">
+                        <button id="reset-settings" class="btn-reset" data-magnetic>
+                            <i class="fas fa-sync-alt"></i>
+                            إعادة تعيين الإعدادات | Reset Settings
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- TASKBAR -->
     <div class="taskbar">
         <div class="taskbar-apps">
@@ -486,6 +601,9 @@
             </button>
         </div>
         <div class="taskbar-end">
+            <button class="taskbar-app settings-btn" data-window="settings" title="الإعدادات">
+                <i class="fas fa-cog"></i>
+            </button>
             <div class="system-tray">
                 <span class="time" id="current-time">00:00</span>
             </div>
