@@ -1254,18 +1254,79 @@ footer p {
    RESPONSIVE DESIGN
 ============================================ */
 
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .window {
+        max-width: 1100px;
+    }
+}
+
+/* Large Devices (Desktops, Laptops) */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: clamp(4rem, 9vw, 7rem);
+    }
+
+    .window {
+        max-width: 850px;
+    }
+}
+
+/* Medium Devices (Tablets) */
 @media (max-width: 992px) {
     .window {
         width: 90%;
         height: 85vh;
+        max-width: 750px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 8vw, 6rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .about-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Small Tablets & Large Phones */
 @media (max-width: 768px) {
+
+    /* Typography */
+    .hero-title {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 
     /* Taskbar Mobile */
     .taskbar {
-        height: 50px;
+        height: 55px;
         padding: 0 0.5rem;
     }
 
@@ -1276,19 +1337,25 @@ footer p {
 
     .start-button,
     .taskbar-app {
-        padding: 0.7rem;
+        padding: 0.6rem;
         min-width: 45px;
         justify-content: center;
+        font-size: 1.1rem;
     }
 
     .taskbar-apps {
-        gap: 0.3rem;
+        gap: 0.4rem;
+    }
+
+    .time {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
     }
 
     /* Windows Fullscreen */
     .window {
         width: 100%;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 55px);
         max-width: none;
         max-height: none;
         top: 0;
@@ -1300,11 +1367,16 @@ footer p {
 
     .window-header {
         cursor: default;
-        height: 50px;
+        height: 55px;
+        padding: 0 1rem;
+    }
+
+    .window-title {
+        font-size: 1rem;
     }
 
     .window.maximized {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 55px);
     }
 
     .window-content {
@@ -1312,7 +1384,7 @@ footer p {
     }
 
     .desktop {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 55px);
     }
 
     /* Hide minimize and maximize on mobile */
@@ -1321,16 +1393,72 @@ footer p {
         display: none;
     }
 
+    .window-btn {
+        width: 38px;
+        height: 38px;
+    }
+
     /* Reveal animations */
     .reveal {
         opacity: 1 !important;
         transform: translateY(0) !important;
     }
+
+    /* Grids */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xs);
+    }
+
+    /* Buttons */
+    .hero-cta {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Contact Form */
+    .form-input {
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+    }
+
+    /* Settings adjustments */
+    .settings-content {
+        gap: var(--spacing-sm);
+    }
+
+    .settings-section {
+        padding: var(--spacing-md);
+    }
+
+    .settings-title {
+        font-size: 1.1rem;
+    }
 }
 
-@media (max-width: 480px) {
+/* Mobile Devices (Phones) */
+@media (max-width: 576px) {
     .hero-title {
-        font-size: clamp(2rem, 8vw, 4rem) !important;
+        font-size: clamp(2rem, 8vw, 4rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .window-content {
@@ -1339,12 +1467,172 @@ footer p {
 
     .about-content,
     .contact-content {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .stat-number {
+        font-size: 2rem;
     }
 
     .projects-grid,
     .skills-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category,
+    .project-card {
+        padding: var(--spacing-md);
+    }
+
+    /* Taskbar adjustments */
+    .taskbar {
+        height: 50px;
+        padding: 0 0.3rem;
+    }
+
+    .taskbar-app {
+        padding: 0.5rem;
+        min-width: 42px;
+        font-size: 1rem;
+    }
+
+    .taskbar-apps {
+        gap: 0.25rem;
+    }
+
+    .window {
+        height: calc(100vh - 50px);
+    }
+
+    .desktop {
+        height: calc(100vh - 50px);
+    }
+
+    /* Social links */
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
+    /* Contact details */
+    .contact-details {
+        gap: var(--spacing-sm);
+    }
+
+    .contact-item {
+        padding: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+
+    /* Form adjustments */
+    .btn-submit {
+        font-size: 1rem;
+        padding: 0.9rem 1.5rem;
+    }
+
+    /* Settings for mobile */
+    .setting-item {
+        padding: var(--spacing-xs);
+        font-size: 0.9rem;
+    }
+
+    .setting-select {
+        font-size: 0.9rem;
+        min-width: 140px;
+    }
+}
+
+/* Extra Small Devices (Small Phones) */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: clamp(1.8rem, 7vw, 3.5rem);
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .window-header {
+        padding: 0 0.5rem;
+    }
+
+    .window-title {
+        font-size: 0.9rem;
+        gap: 0.5rem;
+    }
+
+    .window-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    .taskbar-app {
+        padding: 0.4rem;
+        min-width: 38px;
+        font-size: 0.9rem;
+    }
+
+    .time {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .stat-item {
+        padding: var(--spacing-xs);
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .window {
+        height: 100vh;
+    }
+
+    .desktop {
+        height: 100vh;
+    }
+
+    .taskbar {
+        height: 45px;
+    }
+
+    .window-header {
+        height: 45px;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 6vw, 3.5rem);
+        margin-bottom: 0.3rem;
+    }
+
+    .hero-cta {
+        margin-top: var(--spacing-sm);
     }
 }
 
