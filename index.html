@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>علي فضل | مطور ويب محترف - Professional Web Developer</title>
+    <meta name="title" content="علي فضل | مطور ويب محترف - Professional Web Developer">
+    <meta name="description"
+        content="مطور Full Stack متخصص في بناء تطبيقات ويب احترافية. خبرة في React, Node.js, Python والمزيد. تواصل معي للحصول على حلول تقنية مبتكرة.">
+    <meta name="keywords"
+        content="مطور ويب, Full Stack Developer, React, Node.js, مصمم ويب, برمجة, تطوير تطبيقات, UI/UX">
+    <meta name="author" content="علي فضل">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="علي فضل | مطور ويب محترف">
+    <meta property="og:description"
+        content="مطور Full Stack متخصص في بناء تطبيقات ويب احترافية. خبرة في React, Node.js, Python والمزيد.">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/preview.png">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourwebsite.com/">
+    <meta name="twitter:title" content="علي فضل | مطور ويب محترف">
+    <meta name="twitter:description" content="مطور Full Stack متخصص في بناء تطبيقات ويب احترافية.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/preview.png">
+    <meta name="twitter:creator" content="@yourusername">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Montserrat:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "علي فضل",
+        "url": "https://yourwebsite.com",
+        "image": "https://yourwebsite.com/assets/images/preview.png",
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+        },
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://discord.com/users/youruserid",
+            "https://twitter.com/yourusername"
+        ],
+        "email": "ali.fadel.j90@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Amman",
+            "addressCountry": "JO"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Background Animated Orbs -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- DESKTOP / HERO SECTION -->
+    <div class="desktop" id="desktop">
+        <div class="container desktop-content">
+            <h1 class="hero-title">علي فضل</h1>
+            <p class="hero-subtitle">
+                <span class="typing-cursor"></span>
+                <span id="typing-text"></span>
+            </p>
+            <div class="hero-cta">
+                <button class="btn-primary window-trigger" data-window="contact" data-magnetic>
+                    <i class="fas fa-envelope"></i> تواصل معي
+                </button>
+                <button class="btn-secondary window-trigger" data-window="projects" data-magnetic>
+                    <i class="fas fa-laptop-code"></i> شاهد أعمالي
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WINDOWS -->
+
+    <!-- About Window -->
+    <div class="window" id="window-about" data-window="about">
+        <div class="window-header">
+            <div class="window-title">
+                <i class="fas fa-user"></i>
+                <span>من أنا | About Me</span>
+            </div>
+            <div class="window-controls">
+                <button class="window-btn minimize" title="تصغير"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-btn maximize" title="تكبير"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-btn close" title="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="image-wrapper glass-container">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <h3 class="about-subtitle">مرحباً، أنا علي مطور ومصمم واجهات</h3>
+                    <p class="about-description">
+                        مطور ومتعلم تكنولجيا المعلومات وبرمجيات من قبل BTEC التابعة الى pearson البريطانية,
+                        مطور العاب ومبرمج للغتي python وnodejs ومصمم UI للمواقع الإلكترونية.
+
+                    </p>
+                    <p class="about-description">
+                        شغوف بالتكنولوجيا الحديثة وأحب تعلم أحدث الأدوات والتقنيات.
+                        أعمل على تحويل الأفكار إلى منتجات رقمية مميزة تحل مشاكل حقيقية.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item glass-container">
+                            <h4 class="stat-number">4+</h4>
+                            <p class="stat-label">سنوات خبرة</p>
+                        </div>
+                        <div class="stat-item glass-container">
+                            <h4 class="stat-number">12+</h4>
+                            <p class="stat-label">مشروع مكتمل</p>
+                        </div>
+                        <div class="stat-item glass-container">
+                            <h4 class="stat-number">8+</h4>
+                            <p class="stat-label">عميل سعيد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Window -->
+    <div class="window" id="window-skills" data-window="skills">
+        <div class="window-header">
+            <div class="window-title">
+                <i class="fas fa-code"></i>
+                <span>المهارات | Skills</span>
+            </div>
+            <div class="window-controls">
+                <button class="window-btn minimize" title="تصغير"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-btn maximize" title="تكبير"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-btn close" title="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-container reveal" data-magnetic>
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category glass-container reveal" data-magnetic>
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-category glass-container reveal" data-magnetic>
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe XD</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Wireframing</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-container reveal" data-magnetic>
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-title">Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Window -->
+    <div class="window" id="window-projects" data-window="projects">
+        <div class="window-header">
+            <div class="window-title">
+                <i class="fas fa-laptop-code"></i>
+                <span>مشاريعي | My Projects</span>
+            </div>
+            <div class="window-controls">
+                <button class="window-btn minimize" title="تصغير"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-btn maximize" title="تكبير"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-btn close" title="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-container reveal" data-magnetic>
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">منصة تعليمية تفاعلية</h3>
+                        <p class="project-description">
+                            منصة تعليمية شاملة تتيح للمدرسين إنشاء دورات تفاعلية والطلاب متابعة تقدمهم بسهولة.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> معاينة</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-container reveal" data-magnetic>
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">تطبيق إدارة المهام</h3>
+                        <p class="project-description">
+                            تطبيق جوال لإدارة المهام اليومية مع واجهة بسيطة وسريعة ومزامنة سحابية.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> معاينة</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-container reveal" data-magnetic>
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">متجر إلكتروني متكامل</h3>
+                        <p class="project-description">
+                            منصة تجارة إلكترونية كاملة مع نظام دفع آمن ولوحة تحكم للبائعين.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> معاينة</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-container reveal" data-magnetic>
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">لوحة تحليلات بيانات</h3>
+                        <p class="project-description">
+                            أداة تصور بيانات تفاعلية لتحليل المبيعات والإحصائيات في الوقت الفعلي.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> معاينة</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Window -->
+    <div class="window" id="window-contact" data-window="contact">
+        <div class="window-header">
+            <div class="window-title">
+                <i class="fas fa-envelope"></i>
+                <span>تواصل معي | Contact Me</span>
+            </div>
+            <div class="window-controls">
+                <button class="window-btn minimize" title="تصغير"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-btn maximize" title="تكبير"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-btn close" title="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <h3 class="contact-subtitle">لنتحدث عن مشروعك القادم</h3>
+                    <p class="contact-text">
+                        هل لديك فكرة مشروع؟ أو تبحث عن مطور لفريقك؟ لا تتردد في التواصل معي!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item glass-container">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني</h4>
+                                <p>ali.fadel.j09@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item glass-container">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>الموقع</h4>
+                                <p>المملكة الاردنية الهاشمية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/9f9965723-jpg" target="_blank" class="social-icon glass-container"
+                            data-magnetic aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://discord.com/users/839934741918777415" target="_blank"
+                            class="social-icon glass-container" data-magnetic aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@zx7ni" target="_blank" class="social-icon glass-container"
+                            data-magnetic aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://instagram.com/a0sls" target="_blank" class="social-icon glass-container"
+                            data-magnetic aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form glass-container reveal" id="contact-form"
+                    action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e7966449-5cee-47c3-8c67-c5b9ad334530">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="hidden" name="subject" value="رسالة جديدة من موقعك الشخصي">
+                    <input type="hidden" name="from_name" value="موقعي الشخصي">
+
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">الاسم</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" class="form-input" placeholder=" " required>
+                        <label for="subject" class="form-label">الموضوع</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-input form-textarea" placeholder=" "
+                            required></textarea>
+                        <label for="message" class="form-label">الرسالة</label>
+                    </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit" class="btn-submit" data-magnetic id="submit-btn">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- TASKBAR -->
+    <div class="taskbar">
+        <div class="taskbar-apps">
+            <button class="taskbar-app" data-window="about" title="من أنا">
+                <i class="fas fa-user"></i>
+                <span class="taskbar-label">من أنا</span>
+            </button>
+            <button class="taskbar-app" data-window="skills" title="المهارات">
+                <i class="fas fa-code"></i>
+                <span class="taskbar-label">المهارات</span>
+            </button>
+            <button class="taskbar-app" data-window="projects" title="المشاريع">
+                <i class="fas fa-laptop-code"></i>
+                <span class="taskbar-label">المشاريع</span>
+            </button>
+            <button class="taskbar-app" data-window="contact" title="تواصل">
+                <i class="fas fa-envelope"></i>
+                <span class="taskbar-label">تواصل</span>
+            </button>
+        </div>
+        <div class="taskbar-end">
+            <div class="system-tray">
+                <span class="time" id="current-time">00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Hidden in Windows mode) -->
+    <footer style="display: none;">
+        <div class="container">
+            <p>صُنع بـ <span class="footer-heart">❤</span> باستخدام HTML, CSS, JavaScript</p>
+            <p>&copy; 2024 Your Name. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
