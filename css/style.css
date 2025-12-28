@@ -1352,23 +1352,27 @@ footer p {
         padding: 0.4rem 0.7rem;
     }
 
-    /* Windows Fullscreen */
+    /* Windows Fullscreen - CRITICAL FOR MOBILE */
     .window {
-        width: 100%;
-        height: calc(100vh - 55px);
-        max-width: none;
-        max-height: none;
-        top: 0;
-        left: 0;
-        transform: none;
-        border-radius: 0;
-        border: none;
+        width: 100% !important;
+        height: calc(100vh - 55px) !important;
+        max-width: none !important;
+        max-height: none !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 55px !important;
+        transform: none !important;
+        border-radius: 0 !important;
+        border: none !important;
+        position: fixed !important;
     }
 
     .window-header {
         cursor: default;
         height: 55px;
         padding: 0 1rem;
+        flex-shrink: 0;
     }
 
     .window-title {
@@ -1376,11 +1380,14 @@ footer p {
     }
 
     .window.maximized {
-        height: calc(100vh - 55px);
+        height: calc(100vh - 55px) !important;
     }
 
     .window-content {
         padding: var(--spacing-md);
+        height: calc(100% - 55px);
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .desktop {
@@ -1463,6 +1470,7 @@ footer p {
 
     .window-content {
         padding: var(--spacing-sm);
+        height: calc(100% - 50px) !important;
     }
 
     .about-content,
@@ -1491,7 +1499,7 @@ footer p {
 
     /* Taskbar adjustments */
     .taskbar {
-        height: 50px;
+        height: 50px !important;
         padding: 0 0.3rem;
     }
 
@@ -1506,11 +1514,16 @@ footer p {
     }
 
     .window {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 50px) !important;
+        bottom: 50px !important;
     }
 
     .desktop {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 50px) !important;
+    }
+
+    .window-header {
+        height: 50px !important;
     }
 
     /* Social links */
